@@ -1,0 +1,23 @@
+{
+  "name": "dragit",
+  "version": "1.0.0",
+  "description": "Click/tap and drag to scroll content within a container.",
+  "homepage": "https://github.com/azinasili/dragit",
+  "authors": "Azin Asili <hello@azinasili.com>",
+  "license": "MIT",
+  "main": "dragit.js",
+  "keywords": [
+    "dragit",
+    "drag",
+    "tap",
+    "scroll",
+    "front-end",
+    "component"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower.json"
+  ]
+}
