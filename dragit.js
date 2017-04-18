@@ -53,7 +53,7 @@ function Dragit(trigger, options) {
   let settings;
 
   /**
-   * If options object passed to A11yOffCanvas
+   * If options object passed to Dragit
    * Combine options with defaults.
    */
   if (options && typeof options == 'object') {
