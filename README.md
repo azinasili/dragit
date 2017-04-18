@@ -10,12 +10,6 @@ With [NPM](https://www.npmjs.com/package/dragit):
 npm install dragit --save
 ```
 
-With [Bower](https://bower.io/):
-
-```bash
-bower install dragit --save
-```
-
 Or include Dragit directly:
 
 ```html
