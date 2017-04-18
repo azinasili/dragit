@@ -168,16 +168,16 @@ function Dragit(trigger, options) {
 
 // AMD support
 if (typeof define === 'function' && define.amd) {
-  define(function () { return Hello; });
+  define(function () { return Dragit; });
 }
 // CommonJS support.
 else if (typeof exports !== 'undefined') {
   // Support Node.js specific `module.exports` (which can be a function)
   if (typeof module !== 'undefined' && module.exports) {
-    exports = module.exports = Hello;
+    exports = module.exports = Dragit;
   }
   // But always support CommonJS module 1.1.1 spec (`exports` cannot be a function)
-  exports.Hello = Hello;
+  exports.Dragit = Dragit;
 }
 
 // ES6 support
