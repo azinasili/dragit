@@ -30,7 +30,7 @@ import Dragit from 'dragit';
 
 
 ## Usage
-Dragit only requires the container element to be smaller than it's contents.
+Dragit only requires a container element. All needed styles can be added during initialization of Dragit or with a seperate stylesheet.
 
 ```html
 <div id="dragme">
@@ -38,17 +38,51 @@ Dragit only requires the container element to be smaller than it's contents.
 </div>
 ```
 
-```css
-#dragme {
-  height: 100px;
-  overflow: auto;
-  width: 100px;
-}
-```
+Apply Dragit to selected element(s) (all options with default values are shown).
 
 ```javascript
-const dragme = new Dragit('#dragme');
+const el = document.getElementById('dragme');
+const dragme = new Dragit(el, {
+  addCursor: true,
+  dragX: true,
+  dragY: true,
+  addOverflow: true,
+  height: null,
+  width: null,
+});
 ```
+
+
+### Configuration options
+#### addCursor
+**Type:** `Boolean` **Default:** `true`
+
+**Usage:** Should Dragit add a grab and grabbing cursor style.
+
+#### dragX
+**Type:** `Boolean` **Default:** `true`
+
+**Usage:** Should Dragit allow for dragging on the X axis.
+
+#### dragY
+**Type:** `Boolean` **Default:** `true`
+
+**Usage:** Should Dragit allow for dragging on the Y axis.
+
+#### addOverflow
+**Type:** `Boolean` **Default:** `true`
+
+**Usage:** Should Dragit add overflow styles to container.
+
+#### height
+**Type:** `Number` **Default:** `null`
+
+**Usage:** Have Dragit add a height (in pixels) to container.
+
+#### width
+**Type:** `Number` **Default:** `null`
+
+**Usage:** Have Dragit add a width (in pixels) to container.
 
 
 ### Methods
