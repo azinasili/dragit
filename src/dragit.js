@@ -163,6 +163,22 @@ function Dragit(trigger, options) {
 }
 
 /**
- * Export Dragit component.
+ * Export Dragit component for AMD, CommonJS, and ES6 Modules.
  */
+
+// AMD support
+if (typeof define === 'function' && define.amd) {
+  define(function () { return Hello; });
+}
+// CommonJS support.
+else if (typeof exports !== 'undefined') {
+  // Support Node.js specific `module.exports` (which can be a function)
+  if (typeof module !== 'undefined' && module.exports) {
+    exports = module.exports = Hello;
+  }
+  // But always support CommonJS module 1.1.1 spec (`exports` cannot be a function)
+  exports.Hello = Hello;
+}
+
+// ES6 support
 export default Dragit;
